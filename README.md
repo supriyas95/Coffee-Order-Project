@@ -1,70 +1,86 @@
-☕ Coffee Orders Analytics Project
-Business Intelligence and Consumer Insight using Excel + Data Models
+# ☕ Coffee Orders Analytics Project
 
-🧩 Project Overview
-This project analyzes coffee sales data to uncover insights into customer behavior, product performance, and regional sales trends. Using detailed order data across multiple dimensions (customer, product, geography), we built an interactive dashboard to support decisions around product strategy, pricing, and loyalty engagement.
+**Sales Intelligence & Customer Insights using Excel**
 
-📄 Data Summary
-The dataset includes multi-sheet transactional data covering:
+This project analyzes coffee order transactions to uncover product trends, regional performance, and customer loyalty patterns. Leveraging Excel dashboards and relational data modeling, it provides actionable business insights for product strategy, customer segmentation, and revenue growth.
 
-Table	Description
-orders	Individual coffee orders with customer & product info
-customers	Customer profiles including geography and loyalty
-products	Product catalog with pricing and profit data
+---
 
-Key columns in the orders table include:
+## 📁 Dataset Overview
 
-Order ID, Order Date
+The Excel workbook includes seven sheets:
 
-Customer ID, Country
+- `orders` – individual sales transactions with quantity, pricing, customer, and product data
+- `customers` – customer profiles (location, loyalty status)
+- `products` – coffee type, roast, size, unit price, and profit margin
+- `Dashboard` – interactive Excel visuals and filters
+- Additional sheets: `TotalSales`, `Top5Customers`, `CountryBarChart`
 
-Coffee Type, Roast Type, Size
+### Key Fields in `orders`:
+| Column         | Description                             |
+|----------------|-----------------------------------------|
+| Order ID       | Unique identifier for each sale         |
+| Order Date     | Date of the transaction                 |
+| Customer ID    | Linked to customer metadata             |
+| Coffee Type    | Arabica, Robusta, Excelsa               |
+| Roast Type     | Light, Medium, or Dark                  |
+| Size           | Order size in kg                        |
+| Sales          | Total revenue for the item              |
+| Loyalty Card   | Whether the customer is enrolled        |
 
-Unit Price, Sales, Profit
+---
 
-Loyalty Card (Yes/No)
+## 📊 Key Business Insights
 
-📊 Key Insights
-🔥 Top-Selling Products
-Arabica and Robusta are the best-selling coffee types.
+### 🔥 Product Performance
+- **Arabica** and **Robusta** are top-selling coffee types.
+- Medium roast in **1kg** and **2.5kg** sizes contribute the highest revenue.
 
-Medium roasts in 1kg and 2.5kg sizes dominate in both unit sales and revenue.
+### 🌍 Geographic Trends
+- **United States** leads in sales volume and customer base.
+- **Ireland** customers show higher average spend per transaction.
 
-🌍 Geographic Trends
-United States leads in total sales volume and customer base.
+### 👥 Customer Behavior
+- **Loyalty card holders** generate over 60% of total sales.
+- Repeat customers show preference for **Excelsa medium roast**.
 
-Ireland shows higher average order value per customer.
+---
 
-👥 Customer Behavior
-Loyalty card members account for over 60% of total sales.
+## 📈 Dashboard Highlights
 
-Repeat customers tend to prefer Excelsa beans with medium roast.
+> 📌 Built entirely in Microsoft Excel using:
+> - PivotTables
+> - Power Query (joins across datasets)
+> - Interactive slicers and charts
 
-📈 Dashboard Features (Excel)
-Country-level bar charts for regional sales
+Visualizations include:
 
-Top 5 customer leaderboard
+- 🌍 **Country-wise bar chart** of total sales
+- 🏆 **Top 5 customer leaderboard**
+- 📆 Time-series trends by order date
+- 📦 Profitability by coffee type & roast
 
-Filterable product profitability analysis
+---
 
-Time-series trend views by order date
+## 💡 Recommendations
 
-💡 Business Recommendations
-📌 Focus marketing on medium roast Arabica products
+- Focus campaigns on **medium roast Arabica** for high ROI
+- Expand **loyalty programs** to underperforming regions (e.g., UK)
+- Optimize or reprice **low-margin SKUs** (e.g., Excelsa 0.5kg)
+- Launch **bundled offers** on best-sellers for loyal customers
 
-🎯 Expand loyalty program to underperforming regions like the UK
+---
 
-💰 Review pricing strategy on low-margin products (e.g., Excelsa small sizes)
+## 🛠 Tools Used
 
-📦 Consider bundling best-sellers for upselling to loyal customers
+- **Microsoft Excel** (Power Query, PivotTables, VLOOKUP/XLOOKUP)
+- Manual data joins and calculated fields
+- Dashboard design via charts, filters, and slicers
 
-🔧 Tools Used
-Microsoft Excel (PivotTables, Power Query, Slicers)
+---
 
-Data modeling using VLOOKUP, XLOOKUP, calculated fields
+## ✅ Outcome
 
-Manual join operations across customers, orders, and product sheets
+This project showcases a business-ready dashboard with advanced Excel modeling to support sales decisions in a retail coffee business. It’s a practical demonstration of **data storytelling, business analytics, and customer segmentation** using spreadsheet tools.
 
-✅ Outcome
-The interactive dashboard and insights derived from this project provide a strong foundation for data-driven coffee sales optimization—targeting growth in high-margin products, loyal customer retention, and regional expansion.
-
+---
